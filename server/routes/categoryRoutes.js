@@ -3,9 +3,9 @@ import { isAdmin, requireSignIn } from "../middlewares/authMiddleware.js";
 import {
   categoryController,
   createCategoryController,
-  deleteCategoryController,
   singleCategoryController,
   updateCategoryController,
+  deleteCategoryController,
 } from "../controllers/categoryController.js";
 
 const router = express.Router();
