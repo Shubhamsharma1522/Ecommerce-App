@@ -1,6 +1,6 @@
 import React from "react";
-import AdminMenu from "../../components/layout/AdminMenu";
-import Layout from "../../components/layout/Layout";
+import AdminMenu from "../../components/layout/AdminMenu.js";
+import Layout from "../../components/layout/Layout.js";
 
 const CreateProduct = () => {
   return (

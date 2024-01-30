@@ -1,7 +1,6 @@
-import React from 'react'
-import Layout from '../../components/layout/Layout'
-import AdminMenu from '../../components/layout/AdminMenu';
-
+import React from "react";
+import Layout from "../../components/layout/Layout.js";
+import AdminMenu from "../../components/layout/AdminMenu.js";
 
 const Users = () => {
   return (
@@ -20,5 +19,4 @@ const Users = () => {
   );
 };
 
-
-export default Users
+export default Users;
