@@ -10,7 +10,6 @@ function Policy() {
             src="/images/contactus.jpeg"
             alt="contactus"
             style={{ width: "100%" }}
-            
           />
         </div>
         <div className="col-md-4">
