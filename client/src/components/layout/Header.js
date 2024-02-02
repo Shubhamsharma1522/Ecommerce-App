@@ -7,7 +7,7 @@ import useCategory from "../../hooks/useCategory";
 import { useCart } from "../../context/cart";
 import { Badge } from "antd";
 
-function Header() {
+const Header = () => {
   const [auth, setAuth] = useAuth();
   const [cart] = useCart();
   const categories = useCategory();
@@ -20,10 +20,9 @@ function Header() {
     localStorage.removeItem("auth");
     toast.success("Logout Successfully");
   };
-
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div className="container-fluid">
           <button
             className="navbar-toggler"
@@ -124,11 +123,11 @@ function Header() {
                 </>
               )}
               <li className="nav-item">
-                <Badge count={cart?.length} showZero>
-                  <NavLink to="/cart" className="nav-link">
+                <NavLink to="/cart" className="nav-link">
+                  <Badge count={cart?.length} showZero offset={[10, -5]}>
                     Cart
-                  </NavLink>
-                </Badge>
+                  </Badge>
+                </NavLink>
               </li>
             </ul>
           </div>
@@ -136,6 +135,6 @@ function Header() {
       </nav>
     </>
   );
-}
+};
 
 export default Header;

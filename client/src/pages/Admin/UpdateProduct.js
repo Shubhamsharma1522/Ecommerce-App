@@ -6,7 +6,6 @@ import AdminMenu from "../../components/layout/AdminMenu";
 import Layout from "../../components/layout/Layout";
 import { Select } from "antd";
 const { Option } = Select;
-
 const UpdateProduct = () => {
   const navigate = useNavigate();
   const params = useParams();
@@ -30,7 +29,7 @@ const UpdateProduct = () => {
       setId(data.product._id);
       setDescription(data.product.description);
       setPrice(data.product.price);
-
+      setPrice(data.product.price);
       setQuantity(data.product.quantity);
       setShipping(data.product.shipping);
       setCategory(data.product.category._id);
@@ -51,7 +50,7 @@ const UpdateProduct = () => {
       }
     } catch (error) {
       console.log(error);
-      toast.error("Something wwent wrong in getting category");
+      toast.error("Something wwent wrong in getting catgeory");
     }
   };
 
@@ -94,14 +93,13 @@ const UpdateProduct = () => {
       const { data } = await axios.delete(
         `/api/v1/product/delete-product/${id}`
       );
-      toast.success("Product Deleted Successfully");
+      toast.success("Product DEleted Succfully");
       navigate("/dashboard/admin/products");
     } catch (error) {
       console.log(error);
       toast.error("Something went wrong");
     }
   };
-
   return (
     <Layout title={"Dashboard - Create Product"}>
       <div className="container-fluid m-3 p-3">

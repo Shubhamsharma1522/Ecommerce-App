@@ -1,9 +1,9 @@
 import React from "react";
 import Layout from "../components/layout/Layout";
 
-function About() {
+const About = () => {
   return (
-    <Layout title={"About us - Ecommerce App"}>
+    <Layout title={"About us - Ecommer app"}>
       <div className="row contactus ">
         <div className="col-md-6 ">
           <img
@@ -25,6 +25,6 @@ function About() {
       </div>
     </Layout>
   );
-}
+};
 
 export default About;

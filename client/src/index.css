@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap");
 
 * {
   margin: 0;
@@ -6,14 +6,17 @@
   box-sizing: border-box;
 }
 
-/* navbar css */
+/* font-family: 'Poppins', sans-serif; */
+/* font-family: 'Playfair Display', serif; */
+
+/* //navbar css */
 .navbar {
-  font-family: "Poppins", serif;
+  font-family: "Poppins", sans-serif;
   font-size: 17px;
   line-height: 26px;
   text-transform: uppercase;
   box-shadow: 0 8px 6px -6px gray;
-  /* --webkit-box-shadow: 0 8px 6px -6px gray; */
+  --webkit-box-shadow: 0 8px 6px -6px gray;
   border-bottom: solid gray !important;
 }
 
@@ -31,13 +34,32 @@
   letter-spacing: 3px;
 }
 
-/* ************************************Footer**********/
+.search-form {
+  margin-right: 10px;
+  margin-top: 4px;
+}
+.search-form input {
+  border: none;
+  border-radius: 0;
+}
+.search-form button {
+  background-color: #000000;
+  border-radius: 0;
+  color: white;
+}
+
+/* =============================
+==========footer============= */
 
 .footer {
   color: white;
   padding: 25px;
-  background: #000000; /* fallback for old browsers*/
-  background: -webkit-linear-gradient(to right, #434343, #000000);
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #434343, #000000);
 }
 
@@ -51,9 +73,8 @@
   color: #ffefba;
   border-bottom: 1px solid #ffefba;
 }
-
-/* **********************Page not Found*****************/
-
+/* =================================
+======== page not found css ======= */
 .pnf {
   display: flex;
   min-height: 65vh;
@@ -67,6 +88,10 @@
   font-weight: 700;
 }
 
+.pnf-heading {
+  font-weight: normal;
+}
+
 .pnf-btn {
   color: black;
   border: 1px solid black;
@@ -74,14 +99,12 @@
   padding: 10px;
   margin-top: 10px;
 }
-
 .pnf-btn:hover {
   background-color: black;
   color: white;
 }
-
-/******************contact*******************/
-
+/* ========================================= */
+/* =========contact us ========= */
 .contactus {
   margin: 0;
   padding: 0;
@@ -91,8 +114,31 @@
   justify-content: center;
 }
 
-/*********************/
+/* ==================== */
 .product-link {
   text-decoration: none !important;
   color: black !important;
+}
+
+.cat-btn {
+  padding: 40px 0px;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.cat-btn:hover {
+  background-color: #434343;
+  color: white;
+}
+/* ================
+====dashboard
+=================== */
+
+.dashboard {
+  margin-top: 100px !important;
+}
+
+.dashboard-menu h4 {
+  background-color: #434343 !important;
+  color: white;
+  padding: 20px 0px;
 }

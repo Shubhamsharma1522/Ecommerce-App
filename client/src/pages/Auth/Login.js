@@ -40,18 +40,19 @@ const Login = () => {
     }
   };
   return (
-    <Layout title="Register - Ecommerce App">
-      <div className="form-container ">
+    <Layout title="Register - Ecommer App">
+      <div className="form-container " style={{ minHeight: "90vh" }}>
         <form onSubmit={handleSubmit}>
           <h4 className="title">LOGIN FORM</h4>
 
           <div className="mb-3">
             <input
               type="email"
+              autoFocus
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="form-control"
-              id="exampleInputEmail"
+              id="exampleInputEmail1"
               placeholder="Enter Your Email "
               required
             />
@@ -62,16 +63,15 @@ const Login = () => {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               className="form-control"
-              id="exampleInputPassword"
+              id="exampleInputPassword1"
               placeholder="Enter Your Password"
               required
             />
           </div>
-
           <div className="mb-3">
             <button
-              type="submit"
-              className="btn btn-primary"
+              type="button"
+              className="btn forgot-btn"
               onClick={() => {
                 navigate("/forgot-password");
               }}
@@ -79,6 +79,7 @@ const Login = () => {
               Forgot Password
             </button>
           </div>
+
           <button type="submit" className="btn btn-primary">
             LOGIN
           </button>
